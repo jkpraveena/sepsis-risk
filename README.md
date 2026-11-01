@@ -1,4 +1,4 @@
-                                                    A Scalable Machine Learning Digital Twin Framework for Early Sepsis Risk Prediction
+                                          A Scalable Machine Learning Digital Twin Framework for Early Sepsis Risk Prediction
 
 <p align="center">
   <strong>Early Sepsis Detection Using Multi-Hospital ICU Time-Series Data</strong>
