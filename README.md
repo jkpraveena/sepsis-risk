@@ -1,4 +1,4 @@
-A Scalable Machine Learning Digital Twin Framework for Early Sepsis Risk Prediction
+                                                    A Scalable Machine Learning Digital Twin Framework for Early Sepsis Risk Prediction
 
 <p align="center">
   <strong>Early Sepsis Detection Using Multi-Hospital ICU Time-Series Data</strong>
@@ -7,9 +7,9 @@ A Scalable Machine Learning Digital Twin Framework for Early Sepsis Risk Predict
   Machine Learning | Healthcare AI | Time-Series Analysis | Predictive Analytics
 </p>
 
-⸻
 
-Overview
+
+**Overview**
 
 Sepsis is a life-threatening medical condition caused by the body’s extreme response to infection. Early identification is critical, as delays in detection and treatment can significantly increase mortality risk.
 
@@ -21,7 +21,7 @@ Rather than relying on isolated measurements, the system models changes in patie
 
 The primary objective is to investigate whether machine learning models can provide reliable early warning signals while maintaining generalization across different hospital environments.
 
-Key Features
+**Key Features**
 
 * Early Sepsis Prediction: Predicts sepsis risk up to 6 hours before the onset of sepsis.
 * Longitudinal Patient Monitoring: Utilizes time-series ICU measurements to capture evolving patient conditions.
@@ -30,11 +30,11 @@ Key Features
 * Comparative Model Evaluation: Compares models using AUROC and the official PhysioNet challenge utility score.
 * Scalable Architecture: Designed around a reusable data preprocessing, training, and evaluation pipeline.
 
-Dataset
+**Dataset**
 
 The project uses the PhysioNet/CinC Challenge 2019 Sepsis Dataset.
 
-Dataset characteristics:
+**Dataset characteristics:**
 
 * Approximately 40,336 ICU patient records.
 * Data collected from multiple hospital systems.
@@ -42,7 +42,7 @@ Dataset characteristics:
 * Includes patient vital signs, demographic information, and clinical indicators.
 * Contains sepsis onset annotations for supervised learning.
 
-Clinical Features
+**Clinical Features**
 
 The dataset includes measurements such as:
 
@@ -55,7 +55,7 @@ Laboratory Measurements	WBC, Lactate, Creatinine, Platelets
 Clinical Indicators	Glucose, Bilirubin, Hct, Hgb
 Demographics	Age, Gender
 
-Dataset Source: PhysioNet/CinC Challenge 2019
+**Dataset Source: PhysioNet/CinC Challenge 2019**
 
 Note: The dataset is not included in this repository. Access and download it through PhysioNet according to its data access requirements.
 
@@ -97,7 +97,7 @@ The framework follows a modular machine learning pipeline:
          Early Sepsis Risk
               Prediction
 
-Methodology
+**Methodology**
 
 1. Data Preprocessing
 
@@ -132,18 +132,18 @@ The framework evaluates model performance on a held-out hospital cohort to inves
 
 This is particularly important in healthcare applications, where patient populations and clinical practices can vary between hospitals.
 
-Experimental Results
+**Experimental Results**
 
 The models were evaluated on the held-out Hospital B cohort.
 
-Performance Comparison
+**Performance Comparison**
 
 Model	AUROC	Utility Score
 Logistic Regression	0.6686	0.1041
 XGBoost	0.7753	0.2628
 LSTM	0.6916	0.0126
 
-Key Findings
+**Key Findings**
 
 * XGBoost achieved the highest AUROC of 0.7753 among the evaluated models.
 * XGBoost also achieved the highest utility score of 0.2628.
@@ -151,13 +151,13 @@ Key Findings
 * LSTM demonstrated the potential of temporal modeling but did not outperform XGBoost in the current experiments.
 * The results highlight the importance of evaluating predictive models across different hospital environments.
 
-Best Performing Model: XGBoost
+**Best Performing Model: XGBoost**
 
 The experimental results suggest that gradient-boosted decision trees provide a strong baseline for early sepsis risk prediction using structured ICU time-series data.
 
 Results represent the current experimental configuration and are not evidence of clinical validation.
 
-Technology Stack
+**Technology Stack**
 
 Category	Technologies
 Programming Language	Python
@@ -168,7 +168,7 @@ Visualization	Matplotlib, Seaborn
 Dataset	PhysioNet/CinC Challenge 2019
 Evaluation	AUROC, PhysioNet Utility Score
 
-Getting Started
+**Getting Started**
 
 Prerequisites
 
@@ -212,14 +212,14 @@ Refer to individual scripts and configuration files for execution details.
 
 Project Objectives
 
-The project explores the following research questions:
+**The project explores the following research questions:**
 
 1. Can machine learning models identify sepsis risk several hours before clinical onset?
 2. How effectively can temporal patient information improve early risk prediction?
 3. How well do predictive models generalize across different hospital environments?
 4. Which machine learning approach provides the best balance between predictive performance and clinical utility?
 
-Future Enhancements
+**Future Enhancements**
 
 * Integrate real-time ICU data streams for continuous patient monitoring.
 * Explore transformer-based architectures for temporal clinical modeling.
@@ -228,18 +228,16 @@ Future Enhancements
 * Develop an interactive dashboard for patient risk visualization.
 * Investigate calibration and threshold optimization for clinical risk stratification.
 
-Research Significance
+**Research Significance**
 
 This project explores the application of machine learning and digital twin concepts in healthcare, focusing on early identification of sepsis through longitudinal patient data.
 
 By combining temporal clinical information, predictive modeling, and cross-hospital evaluation, the framework aims to contribute to research on scalable and generalizable clinical early warning systems.
 
-Disclaimer
+**Disclaimer**
 
 This project is intended strictly for academic and research purposes.
 
 It is not a clinically validated medical device and must not be used for actual diagnosis, treatment decisions, or patient care. Predictions require further clinical validation before any real-world application.
-
-⸻
 
 Building intelligent systems for real-world healthcare challenges.
